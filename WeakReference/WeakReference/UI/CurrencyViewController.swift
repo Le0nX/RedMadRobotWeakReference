@@ -13,13 +13,22 @@ class CurrencyViewController: UIViewController {
     @IBOutlet weak var usdLabel: UILabel!
     @IBOutlet weak var currencyLabel: UILabel!
     
+    // замыкание для обновления курса
+    var updateCurrency: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func update(_ sender: Any) {
-        print("reload")
+        updateCurrency?()
     }
 }
 
+extension CurrencyViewController: CurrencyPresenterOutput {
+    func present(_ data: CurrencyPresenterModel) {
+        currencyLabel.text = data.currency
+        print(data.currency)
+    }
+}

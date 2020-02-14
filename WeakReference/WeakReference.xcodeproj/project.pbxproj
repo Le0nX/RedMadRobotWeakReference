@@ -13,6 +13,8 @@
 		148DABFD23F678DB00B3BB98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148DABFB23F678DB00B3BB98 /* Main.storyboard */; };
 		148DABFF23F678E000B3BB98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148DABFE23F678E000B3BB98 /* Assets.xcassets */; };
 		148DAC0223F678E000B3BB98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148DAC0023F678E000B3BB98 /* LaunchScreen.storyboard */; };
+		148DAC0E23F6849100B3BB98 /* CurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DAC0D23F6849100B3BB98 /* CurrencyPresenter.swift */; };
+		148DAC1023F6866500B3BB98 /* CurrencyBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DAC0F23F6866500B3BB98 /* CurrencyBusinessLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		148DABFE23F678E000B3BB98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		148DAC0123F678E000B3BB98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148DAC0323F678E000B3BB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148DAC0D23F6849100B3BB98 /* CurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPresenter.swift; sourceTree = "<group>"; };
+		148DAC0F23F6866500B3BB98 /* CurrencyBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBusinessLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		148DABF423F678DB00B3BB98 /* WeakReference */ = {
 			isa = PBXGroup;
 			children = (
-				148DABF523F678DB00B3BB98 /* AppDelegate.swift */,
-				148DABF723F678DB00B3BB98 /* SceneDelegate.swift */,
-				148DABF923F678DB00B3BB98 /* CurrencyViewController.swift */,
-				148DABFB23F678DB00B3BB98 /* Main.storyboard */,
-				148DABFE23F678E000B3BB98 /* Assets.xcassets */,
-				148DAC0023F678E000B3BB98 /* LaunchScreen.storyboard */,
+				148DAC0C23F6831F00B3BB98 /* Business */,
+				148DAC0B23F6831300B3BB98 /* Presentation */,
+				148DAC0A23F682C800B3BB98 /* Resources */,
+				148DAC0923F682AB00B3BB98 /* UI */,
 				148DAC0323F678E000B3BB98 /* Info.plist */,
 			);
 			path = WeakReference;
+			sourceTree = "<group>";
+		};
+		148DAC0923F682AB00B3BB98 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				148DABFB23F678DB00B3BB98 /* Main.storyboard */,
+				148DABF923F678DB00B3BB98 /* CurrencyViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		148DAC0A23F682C800B3BB98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				148DABF523F678DB00B3BB98 /* AppDelegate.swift */,
+				148DAC0023F678E000B3BB98 /* LaunchScreen.storyboard */,
+				148DABF723F678DB00B3BB98 /* SceneDelegate.swift */,
+				148DABFE23F678E000B3BB98 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		148DAC0B23F6831300B3BB98 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				148DAC0D23F6849100B3BB98 /* CurrencyPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		148DAC0C23F6831F00B3BB98 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				148DAC0F23F6866500B3BB98 /* CurrencyBusinessLogic.swift */,
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				148DABFA23F678DB00B3BB98 /* CurrencyViewController.swift in Sources */,
+				148DAC0E23F6849100B3BB98 /* CurrencyPresenter.swift in Sources */,
 				148DABF623F678DB00B3BB98 /* AppDelegate.swift in Sources */,
 				148DABF823F678DB00B3BB98 /* SceneDelegate.swift in Sources */,
+				148DAC1023F6866500B3BB98 /* CurrencyBusinessLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
