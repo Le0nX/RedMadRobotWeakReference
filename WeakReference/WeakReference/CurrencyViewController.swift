@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CurrencyViewController: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var usdLabel: UILabel!
+    @IBOutlet weak var currencyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func update(_ sender: Any) {
+        print("reload")
+    }
 }
 
