@@ -60,6 +60,7 @@
 		148DABF423F678DB00B3BB98 /* WeakReference */ = {
 			isa = PBXGroup;
 			children = (
+				148DABF723F678DB00B3BB98 /* SceneDelegate.swift */,
 				148DAC0C23F6831F00B3BB98 /* Business */,
 				148DAC0B23F6831300B3BB98 /* Presentation */,
 				148DAC0A23F682C800B3BB98 /* Resources */,
@@ -83,7 +84,6 @@
 			children = (
 				148DABF523F678DB00B3BB98 /* AppDelegate.swift */,
 				148DAC0023F678E000B3BB98 /* LaunchScreen.storyboard */,
-				148DABF723F678DB00B3BB98 /* SceneDelegate.swift */,
 				148DABFE23F678E000B3BB98 /* Assets.xcassets */,
 			);
 			path = Resources;

@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
 
             if let vc = window?.rootViewController as? CurrencyViewController {
-                let presenter = CurrencyPresenter(output: vc)
+                let presenter = CurrencyPresenter(output: vc) // Утечка памяти
                 let currencyUpdater = CurrencyUpdater(output: presenter)
                 vc.updateCurrency = currencyUpdater.update
             }
