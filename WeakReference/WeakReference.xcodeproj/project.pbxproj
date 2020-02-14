@@ -15,6 +15,7 @@
 		148DAC0223F678E000B3BB98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148DAC0023F678E000B3BB98 /* LaunchScreen.storyboard */; };
 		148DAC0E23F6849100B3BB98 /* CurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DAC0D23F6849100B3BB98 /* CurrencyPresenter.swift */; };
 		148DAC1023F6866500B3BB98 /* CurrencyBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DAC0F23F6866500B3BB98 /* CurrencyBusinessLogic.swift */; };
+		148DAC1323F692F800B3BB98 /* WeakRefference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DAC1223F692F800B3BB98 /* WeakRefference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		148DAC0323F678E000B3BB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		148DAC0D23F6849100B3BB98 /* CurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPresenter.swift; sourceTree = "<group>"; };
 		148DAC0F23F6866500B3BB98 /* CurrencyBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBusinessLogic.swift; sourceTree = "<group>"; };
+		148DAC1223F692F800B3BB98 /* WeakRefference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				148DABF723F678DB00B3BB98 /* SceneDelegate.swift */,
+				148DAC1123F692C400B3BB98 /* Helpers */,
 				148DAC0C23F6831F00B3BB98 /* Business */,
 				148DAC0B23F6831300B3BB98 /* Presentation */,
 				148DAC0A23F682C800B3BB98 /* Resources */,
@@ -103,6 +106,14 @@
 				148DAC0F23F6866500B3BB98 /* CurrencyBusinessLogic.swift */,
 			);
 			path = Business;
+			sourceTree = "<group>";
+		};
+		148DAC1123F692C400B3BB98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				148DAC1223F692F800B3BB98 /* WeakRefference.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			files = (
 				148DABFA23F678DB00B3BB98 /* CurrencyViewController.swift in Sources */,
 				148DAC0E23F6849100B3BB98 /* CurrencyPresenter.swift in Sources */,
+				148DAC1323F692F800B3BB98 /* WeakRefference.swift in Sources */,
 				148DABF623F678DB00B3BB98 /* AppDelegate.swift in Sources */,
 				148DABF823F678DB00B3BB98 /* SceneDelegate.swift in Sources */,
 				148DAC1023F6866500B3BB98 /* CurrencyBusinessLogic.swift in Sources */,
